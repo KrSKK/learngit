@@ -72,6 +72,7 @@
 		:s/search/replace
 		:%s/search/replace	全部替换
 		:1,3 s/search/replace	对1，3行有效
+		:g/search/s//replace/g	全文替换
 	.	代替一个字符
 	*	代替一个或多个字符
 	单词边界
