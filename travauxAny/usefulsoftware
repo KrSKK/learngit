@@ -1,0 +1,91 @@
+浏览器:maxthon、chrome、opara、firefox
+聊天工具：QQ(需chrome):https://chrome.google.com/webstore/detail/dualxbeta/mdmfkkgbifpockljpdagggdaiheefbpp/details
+wine+tm2013p1:http://tieba.baidu.com/p/2791052964
+Skype
+视频播放：smplayer（荐）或kmplayer 播放器或VLC、XBMC（加插件看直播http://tieba.baidu.com/p/2247571787）、bino(支持3D)
+压缩软件PeaZip http://imcn.me/html/y2014/19959.html
+桌面录像软件：SimpleScreenRecorder、RecordMyDesktop、recorditnow
+绘制图表工具：qtiplot
+类photoshop:Gimp、GIMPShop（Gimp升级版，更相似Photoshop）、pinta(轻量级gimp)
+类似绘声绘影：kdenlive、Jahsakha
+类Adobe Lightroom:Rawtherapee
+类daemontools（虚拟光驱软件）：acetoneiso、Furius ISO
+pdf阅读器：okular、adobe reader、Foxit Reader、epdfview、zathura
+办公软件：wps、Calligra Suite、libreoffice、永中office、Open Office
+文字记录：为知笔记、WikidPad（类似Notepad）
+网盘：bcloud(百度网盘民间版)、115网盘、金山快盘、云诺Yunio
+系统设置：compizconfig-settings-manager、ailurus小熊猫、unity-tweak-tool
+开机启动项更改：grub-customizer
+dock程序停靠:docky、kiba-dock、Avant Window Navigator
+下载软件1：uget加aria2:http://blog.csdn.net/luojiming1990/article/details/9078447
+下载软件2:multiget或FlareGet
+下载软件3：Point（国内Qt高手制作）http://www.linuxdeepin.com/forum/23/21124
+下载软件4：XwareDesktop(迅雷)：https://github.com/Xinkai/XwareDesktop
+ed2k下载：aMule
+查找Bt:BtResourceSearch
+BT下载：qbittorrent、vuze、transmission、 deluge、utorrent
+软件中心:ubuntu kylin软件中心、深度软件中心、software-center(自带的中心)、App Grid
+取代软件中心进行安装程序：GDebi
+音视频格式转化：Transmageddon、Format Junkie Converter
+第三方酷我音乐：kwplayer
+音乐播放器：深度音乐、Audacious、
+视频播放器：smplayer、kmplayer、vlc
+电视直播：freetuxtv
+视频格式转化：winff
+音视频格式转化：Format Junkie Converter
+音视频简单编辑：Kdenlive、AvideMux
+类Adobe AfterEffect:Cinelerra
+类Flash:Synfig
+幻灯视频制作：Bolide Slideshow Creator
+截图：HotShots、Shutter
+图片编辑:CinePaint、EasyImageSizer（批量压缩）
+图片批量格式转化：Converseen
+防休眠：Caffeine http://imcn.me/html/y2014/19735.html
+文本编辑 gedit(普通记事本)、 kate（代码高亮，推荐）、scite(代码高亮)、Sublime Text 2（代码高亮）、Atom
+小说阅读：txtReader
+写文字工具：Catlooking
+重量级HTML/CSS/JavaScript/PHP编辑器phpstorm
+HTML/CSS/JavaScript：Brackets(实时编辑预览)
+编程：Qt(http://qt-project.org/downloads)、eclipse
+HTML5网页设计：Google Web Designer
+网络封包分析软件：WireShark
+FTP：filezilla
+chm格式阅读器：gnochm、e-book reader
+飞信：libfetion
+光盘刻录:Nero-Burning Rom
+cad:DraftSight、FreeCad、QCAD
+三维建模：blender、maya
+矢量图制作:inkscape
+虚拟机：virtualbox
+类MATLAB:GNU Octave、freemat
+wine模拟器，可以模拟win上软件,其前台playonlinux，http://www.playonlinux.com/en，可装多种win上的游戏
+wine安装pps:http://tieba.baidu.com/p/3037334623
+游戏平台：steam、Desurium
+第一人称射击team fortress 2
+赛车游戏：Stunt Rally：http://www.linuxidc.com/Linux/2011-07/38589.htm
+备份还原系统：remasstersy、back in time、ghost for linux
+软件包备份：APTonCD
+分区工具：GParted
+GRUB修复:Boot-Repair
+屏幕色温调节：F.lux
+远程桌面：TeamViewer
+ubuntu默认软件列表
+文件管理：nautilus\dolphin
+设置中心：unity-control-center
+软件中心：software-center
+字体安装：字体查看器
+电影播放器：TotemVLC
+壁纸切换：爱壁纸
+PHP服务器:lamp、Zend Server
+驱动管理器：Mint Driver Manager、Device Driver Manager
+程序员用：cherrytree（代码笔记）、qxmledit（xml编辑）
+游戏引擎：unity、Leadwerks
+黑色工具：WIFITE、minidwep-gtk
+pdf文字导出：Gscan2pdf、gimageReader
+安卓模拟器：genymotion
+安卓手机管理：QtADB http://www.mintos.org/config/linux-qtadb.html
+手机与PC文件传输：Dukto
+局域网文字、文件互传：飞鸽传书
+使自带压缩支持zip、rar:
+sudo apt-get install p7zip p7zip-full p7zip-rar
+sudo apt-get install rar unrar
