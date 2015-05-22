@@ -1,0 +1,26 @@
+1-     Presentation of VNA
+	A Vendor Neutral Archive (VNA) is a medical imaging technology in which images and documents (and potentially any file of clinical relevance) are stored (archived) in a standard format with a standard interface, such that they can be accessed in a vendor-neutral manner by other systems.
+	This terminology is used as distinct from a traditional Picture Archiving and Communications Systems (PACS: A picture archiving and communication system (PACS) is a medical imaging technology which provides economical storage and convenient access to images from multiple modalities (source machine types).), although there is debate about where the boundary between a VNA and a PACS lies along the continuum of their common features.	
+	a.      Image
+
+	b.      Non-image
+
+2-     Review of indexing software
+
+	a.      Indexing for non-image ( description of Apache lucene or lemur … for indexing pdf and others)
+
+	b.      Review of indexing for images ( pros/cons of MongoDB for DICOM tag)
+
+3-     Description of our implementation of a DICOM tag indexer
+
+	a.      Implementation
+
+	b.      Performance improvement (incremental indexing? 20 tag first and then more tags)
+
+	c.      Evaluation of indexing time (using SSD disk, sub-directories, large or small DICOM file) evaluate indexing time and disk access time.
+
+	d.      Administrative Updates and Corrections (rename patient)
+
+	e.      Cross-domain Identity and Code Resolution (merge patient ID?) http://en.wikipedia.org/wiki/Vendor_Neutral_Archive#Dynamic_Tag_Morphing
+
+	g.      DICOM tag morphing
