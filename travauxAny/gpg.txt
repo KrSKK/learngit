@@ -1,0 +1,35 @@
+生成密钥对
+gpg --gen-key
+
+导出公钥
+gpg -o kaiwen -a --export kaiwen
+
+导出私钥
+gpg -o kaiwen -a --export-secret-key kaiwen
+
+导入密钥（公钥和私钥）
+gpg --import kaiwen.asc(备份密钥的文件）
+
+删除公钥和私钥
+gpg --delete-secret-and-public-key kaiwen
+
+删除私钥
+gpg --delete-secret-key kaiwen
+
+删除公钥
+gpg --delete-key kaiwen
+
+显示所有公钥
+gpg -k
+
+显示所有私钥
+gpg -K
+
+编辑证书
+gpg --edit-ket kaiwen
+
+加密文件
+gpg -e -r kaiwen filename
+
+解密文件
+gpg -o fileout -d filein
