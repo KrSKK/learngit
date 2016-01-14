@@ -1,0 +1,38 @@
+#!/bin/bash
+
+ftype=`file "$1"`
+TA=`echo "$1" | awk -F . '{print $(NF-1)}'` 
+#echo "$TA"
+if [ "$TA" != "tar" ];then
+	case "$ftype" in
+	"$1: Zip archive"*)
+		unzip "$1";;
+	"$1: gzip compressed"*)
+		gunzip "$1";;
+	"$1: bzip2 compressed"*)
+		bunzip2 "$1";;
+	"$1: bzip compressed"*)
+		bunzip2 "$1";;
+	"$1: RAR archive"*)
+		rar x "$1";;
+	"$1: POSIX tar archive"*)
+		tar xvf "$1";;
+	*)echo "File $1 can not be uncompressed with extract"
+	esac
+else
+	case "$ftype" in
+	"$1: Zip archive"*)
+                unzip "$1";;
+        "$1: gzip compressed"*)
+                tar zxvf "$1";;
+        "$1: bzip2 compressed"*)
+                tar jxvf "$1";;
+        "$1: bzip compressed"*)
+                tar jxvf "$1";;
+        "$1: RAR archive"*)
+                rar x "$1";;
+        "$1: POSIX tar archive"*)
+                tar xvf "$1";;
+        *)echo "File $1 can not be uncompressed with extract"
+        esac
+fi

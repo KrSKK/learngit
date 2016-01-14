@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo apt-get autoclean     #uninstall package
+sudo apt-get clean
+sudo apt-get autoremove    #uninstall package dependent
+
+dpkg --get-selections | grep linux
+echo "sudo apt-get purge + image/headers"
+
+
