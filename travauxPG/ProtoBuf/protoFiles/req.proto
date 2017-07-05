@@ -1,0 +1,55 @@
+syntax = "proto3";
+//使用proto3必须先声明syntax，默认为proto2
+
+import "protoFiles/other_protots.proto";	//引入其他proto文件，即可使用其中的message；在编译时，使用-I /--proto_path
+
+message SearchRequest{
+	string query = 1;			//1位tag值，一条message中的一个字段有唯一tag，1-15对应一个字节，预留给常用字段
+	int32 page_numbre = 2;
+	int32 result_per_page = 3;
+
+	enum Corpus{				//enum类型必须在32-bit integer范围之内;message之外定义的enum可在.proto文件的任何地方使用;反序列化时，不能被识别的enum值将会被保留在message中
+		option allow_alias = true;   //允许值相同
+		UNIVERSAL = 0;     //第一个值必须为0
+		WEB = 1;
+		IMAGES = 2;
+		LOCAL = 3;
+		NEWS = 4;
+		PRODUCTS = 5;
+		VIDEO = 6;
+		AALIAS = 6;
+	}
+	Corpus corpus = 4;
+
+	reserved 5, 8, 10;		//预留tag
+	reserved "test", "shb";		//预留字段名
+
+	repeated Result results = 5;
+	message Result{
+		string url = 1;
+		string title = 2;
+		repeated string snippets = 3;
+	}
+}
+
+message OtherMessage{
+	SearchRequest.Result result = 1;	//使用Parent.Type的方式使用嵌套在其他message里的message类型
+}
+//一条message中可以有0个或1个singular的字段，可选字段
+//一条message中可以有0个或多个repeated的字段，相当于一个数组，顺序就是添加时的顺序
+//string类型默认为空string
+//byte类型默认为空byte
+//bool类型默认为false
+//numeric类型默认为0
+//enums类型默认为第一个值，也就是0
+//repeated的描述字段默认为一个空数组
+//如果boolen类型的，不要用false来控制某个动作，因为false为默认值
+//如果一个基本类型的字段被设置为默认，那么这个值将不会被序列化
+
+//更新一个Message，并确保原有代码有效
+//1. 不要更改tags
+//2. 不要使用删除字段的tag，做预留
+//3. int32，uint32，int64，uint64和bool可相互兼容
+//4. sint32和sint64相互兼容，但不与其他integer类型兼容
+//5. string和bytes相互兼容，如果bytes是UTF-8
+//6. fixed32和sfixed32相互兼容，fixed64和sfixed64相互兼容
