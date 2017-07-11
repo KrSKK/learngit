@@ -54,4 +54,45 @@ message OtherMessage{
 //5. string和bytes相互兼容，如果bytes是UTF-8
 //6. fixed32和sfixed32相互兼容，fixed64和sfixed64相互兼容
 
+//在proto3中，不被识别的fields将在反序列化时丢弃
+
+//Any类型消息允许在没有指定他们的.proto定义的情况下使用消息作为一个嵌套类型；一个Any类型包括一个可以被序列化bytes类型的任意消息，以及一个URL作为一个全局标识符和解析消息类型；需要导入import google/protobuf/any.proto；对于给定的消息类型的默认类型URL是type.googleapis.com/packagename.messagename。
+
+//如果消息中有很多可选字段，并且同时至多一个字段会被设置，可使用oneof特性节省内存
+//Example：
+//message SampleMessage{
+//	oneof test_oneof{
+//		string name = 4;
+//		SubMessage sub_message = 9;	不能使用repeated关键字
+//	}
+//}			
+
+//创建一个关联映射：map<key_type, value_type> map_filed = N;
+//map的字段可以是repeated
+//序列化后的顺序和map迭代器的顺序是不正确的
+//当为.proto文件产生生成文本格式时，map会安装key的顺序排序
+//从序列化中解析或者融合时，如果有重复的key则后一个key不会被使用
+
+//可以为.proto文件新增一个可选的package声明符，来防止不同的消息类型有命名冲突
+//package foo.bar
+//message Open{ ... }
+//message Foo{
+//	...
+//	foo.bar.Open open = 1;
+//	...	
+//}
+
+//如果想把消息类型用在RPC（远程方法调用）中，可以在.proto中定义一个RPC服务接口，protobuf编译器将会根据所选择的不同语言生成服务接口代码及存根
+//service SearchService{
+//	rpc Search (SearchRequest) returns (SearchResponse);
+//}
+
+//Proto3支持JSON的编码规范；如果JSON编码的数据丢失或者其本身就是null，这个数据会在解析成protobuf时被表示成默认值
+
+//定义.proto文件时能标注一系列的option
+//如java_package: 生成java类所在的包；option java_package = "com.example.foo";
+//java_outer_classname: 生成java类的名称；option java_outer_classname = "Ponycopter";
+//optimize_for: 可以被设置为SPEED（默认，代码最优），CODE_SIZE（产生的类最少，相对操作慢）或者LITE_RUNTIME（核心类库小得多，经常用于移动手机平台）
+//deprecated（字段选项）：设置为true表示该字段已经被废弃，并且不应该在新的代码中使用，在java中，为@Deprecated注释：int32 old_field = 6 [deprecated=true];
+
 //最好用驼峰式为message和enum命名，用下划线（test_field）为字段命名，用驼峰式为RPC的service和方法命名
