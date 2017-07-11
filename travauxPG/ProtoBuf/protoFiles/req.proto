@@ -53,3 +53,5 @@ message OtherMessage{
 //4. sint32和sint64相互兼容，但不与其他integer类型兼容
 //5. string和bytes相互兼容，如果bytes是UTF-8
 //6. fixed32和sfixed32相互兼容，fixed64和sfixed64相互兼容
+
+//最好用驼峰式为message和enum命名，用下划线（test_field）为字段命名，用驼峰式为RPC的service和方法命名
