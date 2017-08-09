@@ -4,7 +4,7 @@ syntax = "proto3";
 import "protoFiles/other_protots.proto";	//引入其他proto文件，即可使用其中的message；在编译时，使用-I /--proto_path
 
 message SearchRequest{
-	string query = 1;			//1位tag值，一条message中的一个字段有唯一tag，1-15对应一个字节，预留给常用字段
+	string query = 1;			//1为tag值，一条message中的一个字段有唯一tag，1-15对应一个字节，预留给常用字段
 	int32 page_numbre = 2;
 	int32 result_per_page = 3;
 
