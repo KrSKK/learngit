@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package com.zzx.protoClasses;
+
+option java_package = "com.zzx.protoClasses";
+option java_outer_classname = "DbDataProto";
+
+message DbData {
+    required int32 msg_id = 1;
+}
+

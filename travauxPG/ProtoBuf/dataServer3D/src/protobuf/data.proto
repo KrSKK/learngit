@@ -1,0 +1,53 @@
+syntax = "proto2";
+
+package com.zzx.protoClasses;
+
+option java_package = "com.zzx.protoClasses";
+option java_outer_classname = "DataProto";
+
+import "dbdata.proto";
+import "transmitterdata.proto";
+import "electricdata.proto";
+import "airconditiondata.proto";
+import "firefightdata.proto";
+import "securitydata.proto";
+import "envirooutsidedata.proto";
+import "enviroinsidedata.proto";
+import "gardendata.proto";
+import "roadlampdata.proto";
+import "watermanagerdata.proto";
+import "ammeterdata.proto";
+import "watermeterdata.proto";
+
+
+message Data {
+    enum msg_type {
+        DB = 0;
+        TRANSMITTER = 1;
+        ELECTRIC = 2;
+        AIRCONDITION = 3;
+        FIREFIGHT = 4;
+        SECURITY = 5;
+        ENVIROOUTSIDE = 6;
+        ENVIROINSIDE = 7;
+        GARDEN = 8;
+        ROADLAMP = 9;
+        WATERMANAGER = 10;
+        AMMETER = 11;
+        WATERMETER = 12;
+    }
+
+    repeated DbData dbdata = 1;
+    repeated TransmitterData transmitterdata = 2;
+    repeated ElectricData electricdata = 3;
+    repeated AirconditionData airconditiondata = 4;
+    repeated FirefightData firefightdata = 5;
+    repeated SecurityData securitydata = 6;
+    repeated EnvirooutsideData envirooutsidedata = 7;
+    repeated EnviroinsideData enviroinsidedata = 8;
+    repeated GardenData gardendata = 9;
+    repeated RoadlampData roadlampdata = 10;
+    repeated WatermanagerData watermanagerdata = 11;
+    repeated AmmeterData ammeterdata = 12;
+    repeated WatermeterData watermeterdata = 13;
+}
