@@ -8,3 +8,7 @@ option java_outer_classname = "SecurityDataProto";
 message SecurityData {
     required int32 msg_id = 1;
 }
+
+message SecurityDataList {
+    repeated SecurityData data_list = 1;
+}

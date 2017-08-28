@@ -8,3 +8,7 @@ option java_outer_classname = "GardenDataProto";
 message GardenData {
     required int32 msg_id = 1;
 }
+
+message GardenDataList {
+    repeated GardenData data_list = 1;
+}

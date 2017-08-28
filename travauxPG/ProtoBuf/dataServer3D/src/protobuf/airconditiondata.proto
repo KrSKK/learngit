@@ -8,3 +8,7 @@ option java_outer_classname = "AirconditionDataProto";
 message AirconditionData {
     required int32 msg_id = 1;
 }
+
+message AirconditionDataList{
+    repeated AirconditionData data_list = 1;
+}

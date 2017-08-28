@@ -8,3 +8,7 @@ option java_outer_classname = "EnviroinsideDataProto";
 message EnviroinsideData {
     required int32 msg_id = 1;
 }
+
+message EnviroinsideDataList {
+    repeated EnviroinsideData data_list = 1;
+}

@@ -8,3 +8,7 @@ option java_outer_classname = "AmmeterDataProto";
 message AmmeterData {
     required int32 msg_id = 1;
 }
+
+message AmmeterDataList {
+    repeated AmmeterData data_list = 1;
+}

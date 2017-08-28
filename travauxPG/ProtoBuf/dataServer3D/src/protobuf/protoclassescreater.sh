@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf ../main/java/com/zzx/protoClasses/*
+
 for file in ./*
 do
     if [ -f $file ]&&[ ${file##*.} = "proto" ]

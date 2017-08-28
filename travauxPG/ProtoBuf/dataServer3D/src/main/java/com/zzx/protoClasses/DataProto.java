@@ -19,44 +19,24 @@ public final class DataProto {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     java.util.List<com.zzx.protoClasses.DbDataProto.DbData> 
         getDbdataList();
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     com.zzx.protoClasses.DbDataProto.DbData getDbdata(int index);
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     int getDbdataCount();
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     java.util.List<? extends com.zzx.protoClasses.DbDataProto.DbDataOrBuilder> 
         getDbdataOrBuilderList();
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     com.zzx.protoClasses.DbDataProto.DbDataOrBuilder getDbdataOrBuilder(
@@ -777,20 +757,12 @@ public final class DataProto {
     public static final int DBDATA_FIELD_NUMBER = 1;
     private java.util.List<com.zzx.protoClasses.DbDataProto.DbData> dbdata_;
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     public java.util.List<com.zzx.protoClasses.DbDataProto.DbData> getDbdataList() {
       return dbdata_;
     }
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     public java.util.List<? extends com.zzx.protoClasses.DbDataProto.DbDataOrBuilder> 
@@ -798,30 +770,18 @@ public final class DataProto {
       return dbdata_;
     }
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     public int getDbdataCount() {
       return dbdata_.size();
     }
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     public com.zzx.protoClasses.DbDataProto.DbData getDbdata(int index) {
       return dbdata_.get(index);
     }
     /**
-     * <pre>
-     *repeated AddressBook addressbook = 1;
-     * </pre>
-     *
      * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
      */
     public com.zzx.protoClasses.DbDataProto.DbDataOrBuilder getDbdataOrBuilder(
@@ -2389,10 +2349,6 @@ public final class DataProto {
           com.zzx.protoClasses.DbDataProto.DbData, com.zzx.protoClasses.DbDataProto.DbData.Builder, com.zzx.protoClasses.DbDataProto.DbDataOrBuilder> dbdataBuilder_;
 
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public java.util.List<com.zzx.protoClasses.DbDataProto.DbData> getDbdataList() {
@@ -2403,10 +2359,6 @@ public final class DataProto {
         }
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public int getDbdataCount() {
@@ -2417,10 +2369,6 @@ public final class DataProto {
         }
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public com.zzx.protoClasses.DbDataProto.DbData getDbdata(int index) {
@@ -2431,10 +2379,6 @@ public final class DataProto {
         }
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder setDbdata(
@@ -2452,10 +2396,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder setDbdata(
@@ -2470,10 +2410,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder addDbdata(com.zzx.protoClasses.DbDataProto.DbData value) {
@@ -2490,10 +2426,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder addDbdata(
@@ -2511,10 +2443,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder addDbdata(
@@ -2529,10 +2457,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder addDbdata(
@@ -2547,10 +2471,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder addAllDbdata(
@@ -2566,10 +2486,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder clearDbdata() {
@@ -2583,10 +2499,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public Builder removeDbdata(int index) {
@@ -2600,10 +2512,6 @@ public final class DataProto {
         return this;
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public com.zzx.protoClasses.DbDataProto.DbData.Builder getDbdataBuilder(
@@ -2611,10 +2519,6 @@ public final class DataProto {
         return getDbdataFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public com.zzx.protoClasses.DbDataProto.DbDataOrBuilder getDbdataOrBuilder(
@@ -2625,10 +2529,6 @@ public final class DataProto {
         }
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public java.util.List<? extends com.zzx.protoClasses.DbDataProto.DbDataOrBuilder> 
@@ -2640,10 +2540,6 @@ public final class DataProto {
         }
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public com.zzx.protoClasses.DbDataProto.DbData.Builder addDbdataBuilder() {
@@ -2651,10 +2547,6 @@ public final class DataProto {
             com.zzx.protoClasses.DbDataProto.DbData.getDefaultInstance());
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public com.zzx.protoClasses.DbDataProto.DbData.Builder addDbdataBuilder(
@@ -2663,10 +2555,6 @@ public final class DataProto {
             index, com.zzx.protoClasses.DbDataProto.DbData.getDefaultInstance());
       }
       /**
-       * <pre>
-       *repeated AddressBook addressbook = 1;
-       * </pre>
-       *
        * <code>repeated .com.zzx.protoClasses.DbData dbdata = 1;</code>
        */
       public java.util.List<com.zzx.protoClasses.DbDataProto.DbData.Builder> 

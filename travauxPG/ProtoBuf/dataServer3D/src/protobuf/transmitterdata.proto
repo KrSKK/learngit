@@ -8,3 +8,7 @@ option java_outer_classname = "TransmitterDataProto";
 message TransmitterData {
     required int32 msg_id = 1;
 }
+
+message TransmitterDataList {
+    repeated TransmitterData data_list = 1;
+}

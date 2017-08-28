@@ -8,3 +8,7 @@ option java_outer_classname = "RoadlampDataProto";
 message RoadlampData {
     required int32 msg_id = 1;
 }
+
+message RoadlampDataList {
+    repeated RoadlampData data_list = 1;
+}

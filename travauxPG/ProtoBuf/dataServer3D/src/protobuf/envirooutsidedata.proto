@@ -5,6 +5,26 @@ package com.zzx.protoClasses;
 option java_package = "com.zzx.protoClasses";
 option java_outer_classname = "EnvirooutsideDataProto";
 
+//室外环境监测
+//@author wenkai
 message EnvirooutsideData {
-    required int32 msg_id = 1;
+    required string device_type = 1;        //设备类型
+    required string device_model = 2;       //设备型号
+    required string device_id = 3;          //设备id
+    required int64 timestamp = 4;           //时间戳
+    optional float wind_speed = 5;          //风速
+    optional float rainfall = 6;            //雨量
+    optional int32 wind_direction = 7;      //风向
+    optional float rainfall_amount = 8;     //累计雨量
+    optional float temperature = 9;         //大气温度
+    optional int32 radiation = 10;          //紫外辐射
+    optional float pressure = 11;           //数字气压
+    optional int32 irradiance = 12;         //照度
+    optional float humidity = 13;           //大气湿度
+    optional int32 pm = 14;                 //PM2.5
+    optional float dew_point = 15;          //露点温度
+}
+
+message EnvirooutsideDataList {
+    repeated EnvirooutsideData data_list = 1;
 }

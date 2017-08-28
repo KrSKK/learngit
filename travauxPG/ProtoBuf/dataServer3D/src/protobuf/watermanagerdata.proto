@@ -5,6 +5,55 @@ package com.zzx.protoClasses;
 option java_package = "com.zzx.protoClasses";
 option java_outer_classname = "WatermanagerDataProto";
 
+//给排水
+//@author wenkai
 message WatermanagerData {
-    required int32 msg_id = 1;
+    required string device_type = 1;        //设备类型
+    required string device_model = 2;       //设备型号
+    required string device_id = 3;          //设备id
+    required int64 timestamp = 4;           //时间戳
+    optional bytes pump_hand_auto1 = 5;     //1#水泵手动/自动 0/1
+    optional bytes pump_hand_auto2 = 6;     //2#水泵手动/自动 0/1
+    optional bytes pump_state1 = 7;         //1#水泵状态变频/工频/停止    0/1/2
+    optional bytes pump_state2 = 8;         //2#水泵状态变频/工频/停止    0/1/2
+    optional bytes main_standby1 = 9;       //1#主用/备用   0/1
+    optional bytes main_standby2 = 10;      //2#主用/备用   0/1
+    //optional bytes motor_fault = 11;        //电机故障  1为故障
+    //optional bytes inverter_fault = 12;     //变频器故障 1为故障
+    //optional bytes pool_shortage_alarm = 13;    //水池缺水告警    1为告警
+    optional WaterLiving living_water = 11;     //生活水
+    optional WaterSupply supply_water = 12;     //自来水
+}
+
+message WaterLiving {
+    //optional bytes well_motor = 1;         //洋港水井电机启停  停止/启动   0/1
+    //optional bytes water_tower_level_warn50T = 2;       //50T水塔低水位报警    正常/报警   0/1
+    //optional bytes pool_level_warn800T = 3;       //800T水池水为报价    正常/报警   0/1
+    optional float pump_room_moterI = 1;        //泵房电机电流
+    optional float pump_room_motorP = 2;        //泵房电机功率
+    optional float pump_room_moter_load = 3;    //泵房电机负载
+    optional float well_motorIa = 4;            //洋港水井电机电流A
+    optional float well_motorIb = 5;            //洋港水井电机电流B
+    optional float well_motorIc = 6;            //洋港水井电机电流C
+    optional float well_motorUa = 7;            //洋港水井电机电压A
+    optional float well_motorUb = 8;            //洋港水井电机电压B
+    optional float well_motorUc = 9;            //洋港水井电机电压C
+    optional float water_tower_level50T = 10;   //50T水塔水位
+    optional float pool_level800T = 11;         //800T水池水位
+    optional float pool_waterpipe_pressure = 12;    //800T水池进水管水压
+    optional float fire_water_flow = 13;        //消防水出水流量
+    optional float life_water_flow = 14;        //生活水出水流量
+    optional float life_water_pressure = 15;    //生活水出水压力
+}
+
+message WaterSupply {
+    optional float motor_current = 1;       //电机电流
+    optional float motor_power = 2;         //电机功率
+    optional float motor_load = 3;          //电机负载
+    optional float reservoir_effluent_flow = 4;     //蓄水池出水流量
+    optional float reservoir_effluent_pressure = 5;     //蓄水池出水压力
+}
+
+message WatermanagerDataList {
+    repeated WatermanagerData data_list = 1;
 }

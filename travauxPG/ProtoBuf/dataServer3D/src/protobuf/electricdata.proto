@@ -8,3 +8,7 @@ option java_outer_classname = "ElectricDataProto";
 message ElectricData {
     required int32 msg_id = 1;
 }
+
+message ElectricDataList {
+    repeated ElectricData data_list = 1;
+}
